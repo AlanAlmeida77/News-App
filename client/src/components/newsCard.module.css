@@ -2,7 +2,7 @@
 .news-card {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     padding: 16px;
     margin: 16px;
     max-width: 40%;
