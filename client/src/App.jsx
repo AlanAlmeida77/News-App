@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import NewsList from './components/NewsList';
+import styles from "./app.css";
 
 function App() {
   const [newsData, setNewsData] = useState([]);

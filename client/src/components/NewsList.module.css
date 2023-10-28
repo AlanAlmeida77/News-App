@@ -1,0 +1,6 @@
+/* NewsList.module.css */
+.news-list {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a "column" para que las noticias aparezcan una sobre la otra */
+    align-items: flex-start; /* Alinea las noticias al lado izquierdo de la pantalla */
+    }
