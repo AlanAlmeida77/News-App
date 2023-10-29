@@ -1,0 +1,13 @@
+.news-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }

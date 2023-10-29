@@ -25,7 +25,7 @@ const Header = () => {
       <h1>Noticias</h1>
       <input
         type="text"
-        placeholder="Buscar noticias de Bitcoin"
+        placeholder="Buscar noticias"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />

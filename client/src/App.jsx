@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import NewsList from './components/NewsList';
 import Header from "./components/Header";
+import NewsContainer from './components/NewsContainer';
 import "./app.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className="app">
       <Header />
       <NewsList news={newsData} />
+      <NewsContainer />
     </div>
   );
 }
