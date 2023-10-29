@@ -7,7 +7,7 @@ function App() {
   const [newsData, setNewsData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/news/spanish-news') 
+    fetch('http://localhost:3001/api/news/general') 
       .then((response) => response.json())
       .then((data) => setNewsData(data.articles));
   }, []);
