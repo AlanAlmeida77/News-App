@@ -1,32 +1,18 @@
 /* NewsCard.module.css */
 .news-card {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #ccc;
-    padding: 16px;
-    margin: 16px;
-    max-width: 40%;
-    max-height: 50%;
+  padding: 10px;
+}
 
-  }
-  
-  .news-card img {
-    max-width: 50%;
-    max-height: 30%;
-    border-radius: 0.5rem;
-  }
-  
-  .news-card h2 {
-    font-size: 1rem;
-  }
-  
-  .news-card p {
-    color: #333;
-    font-size: 0.9rem;
-  }
-  
-  .news-card a {
-    text-decoration: none;
-    color: #007BFF;
-  }
-  
+.news-card h2 {
+  font-size: 1rem;
+}
+
+.news-card p {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.news-card a {
+  text-decoration: none;
+  color: #007BFF;
+}

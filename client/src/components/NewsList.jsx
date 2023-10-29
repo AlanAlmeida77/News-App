@@ -1,20 +1,32 @@
-
 import NewsCard from './NewsCard';
-import styles from './NewsList.module.css'; // Importa el archivo CSS Module
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 const NewsList = ({ news }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
+
   return (
-    <div className={styles['news-list']}>
-      {news.map((article, index) => (
-        <NewsCard
-          key={index}
-          title={article.title}
-          description={article.description}
-          imageUrl={article.urlToImage}
-          url={article.url}
-          className={styles['news-card']} // Aplica la clase al componente NewsCard
-        />
-      ))}
+    <div>
+      <Slider {...settings}>
+        {news.map((article, index) => (
+          <div key={index}>
+            <NewsCard
+              title={article.title}
+              description={article.description}
+              imageUrl={article.urlToImage || 'URL_IMAGEN_MARCADOR_DE_POSICION'}
+              url={article.url}
+            />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };
