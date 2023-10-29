@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <div className={styles['header']}>
-      <h1>Noticias sobre Bitcoin</h1>
+      <h1>Noticias</h1>
       <input
         type="text"
         placeholder="Buscar noticias de Bitcoin"
