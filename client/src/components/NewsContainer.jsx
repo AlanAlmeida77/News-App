@@ -1,9 +1,7 @@
-// NewsContainer.jsx
-
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Cards from './Cards';
 import axios from 'axios';
-import styles from './NewsContainer.module.css'; // Importa el archivo CSS Module para NewsContainer
+import styles from './NewsContainer.module.css';
 
 const NewsContainer = () => {
   const [newsData, setNewsData] = useState([]);

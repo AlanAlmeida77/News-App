@@ -1,5 +1,4 @@
-
-import styles from './Cards.module.css'; // Importa el archivo CSS Module para Cards
+import styles from './Cards.module.css';
 
 const Cards = ({ news }) => {
     return (

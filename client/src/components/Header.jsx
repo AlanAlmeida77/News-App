@@ -9,12 +9,11 @@ const Header = () => {
     try {
       const response = await axios.get('http://localhost:3001/api/news/search', {
         params: {
-          query: searchTerm, // Envia el término de búsqueda al backend
+          query: searchTerm,
         },
       });
 
       const newsData = response.data;
-      // Aquí puedes manejar los datos de noticias obtenidos del backend
     } catch (error) {
       console.error('Error al buscar noticias:', error);
     }

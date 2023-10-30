@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 async function getNews(req, res) {
-  const apiKey = '5d9107bfdcab43ac9fe7db7c13dde5ef'; // Reemplaza con tu clave API de NewsAPI.org
+  const apiKey = '5d9107bfdcab43ac9fe7db7c13dde5ef'; 
   const country = 'ar';
   const category = 'general';
 
