@@ -20,15 +20,18 @@ const Header = () => {
   };
 
   return (
-    <div className={styles['header']}>
-      <h1>Noticias</h1>
-      <input
-        type="text"
-        placeholder="Buscar noticias"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <button onClick={handleSearch}>Buscar</button>
+    <div className={styles.header}>
+      <h1 className={styles.title}>Noticias</h1>
+      <div className={styles.searchContainer}>
+        <input
+          className={styles.placeholder}
+          type="text"
+          placeholder="Buscar noticias"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <button onClick={handleSearch}>Buscar</button>
+      </div>
     </div>
   );
 };
